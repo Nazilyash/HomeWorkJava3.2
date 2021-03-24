@@ -4,9 +4,8 @@ public class LikesCount {
     private String id;
     private int countOfLikes;
     private boolean youLiked;
-    private boolean registeredUser;
-    private boolean blockedUser;
-    private boolean onlyFriend;
+    private boolean canLike;
+    private boolean canShare;
 
     public String getId() {
         return id;
@@ -32,27 +31,19 @@ public class LikesCount {
         this.youLiked = youLiked;
     }
 
-    public boolean isRegisteredUser() {
-        return registeredUser;
+    public boolean isCanLike() {
+        return canLike;
     }
 
-    public void setRegisteredUser(boolean registeredUser) {
-        this.registeredUser = registeredUser;
+    public void setCanLike(boolean canLike) {
+        this.canLike = canLike;
     }
 
-    public boolean isBlockedUser() {
-        return blockedUser;
+    public boolean isCanShare() {
+        return canShare;
     }
 
-    public void setBlockedUser(boolean blockedUser) {
-        this.blockedUser = blockedUser;
-    }
-
-    public boolean isOnlyFriend() {
-        return onlyFriend;
-    }
-
-    public void setOnlyFriend(boolean onlyFriend) {
-        this.onlyFriend = onlyFriend;
+    public void setCanShare(boolean canShare) {
+        this.canShare = canShare;
     }
 }

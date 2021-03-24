@@ -6,11 +6,8 @@ public class ReplyToComment {
     private boolean edited;
     private DateAndTime dateAndTime;
     private String textOfComment;
-    private AttachmentsInfo attachmentsInfo;
     private LikesCount likesCount;
     private int repliesCount;
-    private boolean registeredUser;
-    private boolean blockedUser;
 
     public String getId() {
         return id;
@@ -52,14 +49,6 @@ public class ReplyToComment {
         this.textOfComment = textOfComment;
     }
 
-    public AttachmentsInfo getAttachmentsInfo() {
-        return attachmentsInfo;
-    }
-
-    public void setAttachmentsInfo(AttachmentsInfo attachmentsInfo) {
-        this.attachmentsInfo = attachmentsInfo;
-    }
-
     public LikesCount getLikesCount() {
         return likesCount;
     }
@@ -75,30 +64,4 @@ public class ReplyToComment {
     public void setRepliesCount(int repliesCount) {
         this.repliesCount = repliesCount;
     }
-
-    public boolean isRegisteredUser() {
-        return registeredUser;
-    }
-
-    public void setRegisteredUser(boolean registeredUser) {
-        this.registeredUser = registeredUser;
-    }
-
-    public boolean isBlockedUser() {
-        return blockedUser;
-    }
-
-    public void setBlockedUser(boolean blockedUser) {
-        this.blockedUser = blockedUser;
-    }
-
-    public boolean isOnlyFriend() {
-        return onlyFriend;
-    }
-
-    public void setOnlyFriend(boolean onlyFriend) {
-        this.onlyFriend = onlyFriend;
-    }
-
-    private boolean onlyFriend;
 }

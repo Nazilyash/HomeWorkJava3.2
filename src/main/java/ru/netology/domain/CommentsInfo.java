@@ -6,12 +6,13 @@ public class CommentsInfo {
     private DateAndTime dateAndTime;
     private boolean edited;
     private String textOfComment;
-    private AttachmentsInfo attachmentsInfo;
     private ReplyToComment repliesToComment;
     private int commentCount;
     private LikesCount likesCount;
-    private boolean registeredUser;
-    private boolean blockedUser;
+    private boolean canPost;
+    private boolean groupsCanPost;
+    private boolean canClose;
+    private boolean canOpen;
     private boolean onlyFriend;
 
     public String getId() {
@@ -54,14 +55,6 @@ public class CommentsInfo {
         this.textOfComment = textOfComment;
     }
 
-    public AttachmentsInfo getAttachmentsInfo() {
-        return attachmentsInfo;
-    }
-
-    public void setAttachmentsInfo(AttachmentsInfo attachmentsInfo) {
-        this.attachmentsInfo = attachmentsInfo;
-    }
-
     public ReplyToComment getRepliesToComment() {
         return repliesToComment;
     }
@@ -86,20 +79,36 @@ public class CommentsInfo {
         this.likesCount = likesCount;
     }
 
-    public boolean isRegisteredUser() {
-        return registeredUser;
+    public boolean isCanPost() {
+        return canPost;
     }
 
-    public void setRegisteredUser(boolean registeredUser) {
-        this.registeredUser = registeredUser;
+    public void setCanPost(boolean canPost) {
+        this.canPost = canPost;
     }
 
-    public boolean isBlockedUser() {
-        return blockedUser;
+    public boolean isGroupsCanPost() {
+        return groupsCanPost;
     }
 
-    public void setBlockedUser(boolean blockedUser) {
-        this.blockedUser = blockedUser;
+    public void setGroupsCanPost(boolean groupsCanPost) {
+        this.groupsCanPost = groupsCanPost;
+    }
+
+    public boolean isCanClose() {
+        return canClose;
+    }
+
+    public void setCanClose(boolean canClose) {
+        this.canClose = canClose;
+    }
+
+    public boolean isCanOpen() {
+        return canOpen;
+    }
+
+    public void setCanOpen(boolean canOpen) {
+        this.canOpen = canOpen;
     }
 
     public boolean isOnlyFriend() {

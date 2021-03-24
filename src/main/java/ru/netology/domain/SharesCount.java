@@ -3,9 +3,7 @@ package ru.netology.domain;
 public class SharesCount {
     private String id;
     private int countOfShares;
-    private boolean registeredUser;
-    private boolean blockedUser;
-    private boolean onlyFriend;
+    private boolean youShared;
 
     public String getId() {
         return id;
@@ -23,27 +21,11 @@ public class SharesCount {
         this.countOfShares = countOfShares;
     }
 
-    public boolean isRegisteredUser() {
-        return registeredUser;
+    public boolean isYouShared() {
+        return youShared;
     }
 
-    public void setRegisteredUser(boolean registeredUser) {
-        this.registeredUser = registeredUser;
-    }
-
-    public boolean isBlockedUser() {
-        return blockedUser;
-    }
-
-    public void setBlockedUser(boolean blockedUser) {
-        this.blockedUser = blockedUser;
-    }
-
-    public boolean isOnlyFriend() {
-        return onlyFriend;
-    }
-
-    public void setOnlyFriend(boolean onlyFriend) {
-        this.onlyFriend = onlyFriend;
+    public void setYouShared(boolean youShared) {
+        this.youShared = youShared;
     }
 }
